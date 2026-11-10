@@ -11,7 +11,7 @@ class Book {
     genre: string;
     stock: number;
     
-    // ini tuh paramenter untuk atributies lalu this itu untuk manggil atribut
+    // ini tuh pargiamenter untuk atributies lalu this itu untuk manggil atribut
     constructor(
     title: string,
     authors: string[],

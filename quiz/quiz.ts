@@ -76,7 +76,7 @@ class SuperMushroom extends Item {
         mario.HP += 1;
         mario.currentForm = "super mario";
 
-        return "Mario berubah menjadi Super Mario!";
+        return `Mario berubah menjadi Super Mario dan hp mario menjadi ${mario.HP}`;
     }
 }
 
@@ -85,11 +85,7 @@ class FireFlower extends Item {
         mario.HP += 1;
         mario.currentForm = "fire mario";
 
-        return "Mario berubah menjadi Fire Mario!";
-    }
-
-    tembakBolaApi() {
-        return "Mario menembakkan bola api!";
+        return `Mario berubah menjadi Fire Mario dan hp mario menjadi ${mario.HP} dan mario dapat menembakkan bola api!`;
     }
 }
 
@@ -108,8 +104,7 @@ const bintang = new SuperStar();
 
 console.log(jamur.gunakan(mario));
 console.log(bunga.gunakan(mario));
-console.log(bunga.tembakBolaApi());
 console.log(bintang.gunakan(mario));
-console.log(mario.diserang());
 console.log(mario.bergerakKanan());
 console.log(mario.bergerakKiri());
+console.log(mario.diserang());
